@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-CARD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items:center
+        }
+        .card{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            width:400px;
+           height:600px;
+           background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+           
+           
+        }
+        .textbox{
+            width:100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            flex-wrap: wrap;
+            word-wrap: break-word;
+            text-align: center;
+
+          
+
+        }
+        .heading{
+            color:white;
+            
+        }
+        .paragraph{
+            
+            color:white;
+            word-wrap: break-word;
+            overflow: hidden;
+            word-spacing:0%;
+        }
+        .listed{
+            display: flex;
+            width: 100%;
+        }
+        ul{
+            width:100%;
+            display: flex;
+        
+           
+        }
+        li{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            color:white;
+          justify-content:space-between;
+        }
+        .imagebox{
+            width:100%;
+            height: 50%;
+ 
+        }
+        img{
+            display: inline;
+            width:100%;
+            height:100%;
+        }
+       @media (min-width:693px)
+       {
+        .card{
+            display: flex;
+            flex-direction: row;
+            width:700px;
+           height:400px;
+        }
+        .textbox{
+            width:50%;
+            height: 100%;
+       }
+       .imagebox{
+            width:50%;
+            height: 100%;
+ 
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+           <div class="card">
+            <div class="textbox">
+              <div class="heading">
+                <h1>Get insights that help
+                    your business grow</h1>
+              </div>
+              <div class="paragraph">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officia reiciendis a harum architecto sunt labore, ut repellendus nihil ea ipsum ullam vitae suscipit itaque.</p>
+            </div>
+            <div class="listed">
+                <ul>
+                    <li>10k+ <br>
+                        comment
+                    </li>
+                    <li>214 <br>
+                        paid users</li>
+                    <li>12M+ <br>
+                        views
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="imagebox">
+                <img src="https://t4.ftcdn.net/jpg/03/14/92/75/360_F_314927575_yqFMAuXFTNC6gBflR2njRZ4bQb8dAb7y.jpg" alt="img">
+            </div>
+         
+          
+             
+           </div>
+    </div>
+    
+</body>
+</html>
