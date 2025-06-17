@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+        .container{
+            
+            border:5px solid rgb(9, 255, 144);
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width:200px;
+            height:200px;
+            background-color: rgb(255, 255, 0);
+            border:2px solid black;
+            /* transform:rotate(0.25turn); */
+            /* transform:rotateY(deg); */
+            /* transform:rotateZ(deg); */
+            /* transform:rotateX(deg); */
+            /* transform:scale3d(1.6);
+            transform:scaley(1.6);
+            transform:scalex(1.6); */
+            /* transform:skewY(50deg); */
+            /* transform:skewX(10deg); */
+            /* transform:translateY(100%); */
+            /* transform:translateX(100%); */
+            /* transform:translate(-100%); */
+            /* transform-origin: 0% 0%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:hover{
+             /* transform:rotate(45deg); */
+             /* transform:rotate(-45deg); */
+             /* transform:scale(2); */
+             /* transform:scale(0.5); */
+             /* transform:skew(45deg); */
+             /* transform:translate(500px); */
+             transform:translate(200%,-200%);
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="box">
+            <p>HARRY</p>     
+        </div>
+    
+</div>
+
+    
+</body>
+</html>

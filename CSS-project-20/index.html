@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT-CARD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         
+        }
+        body{
+            width:100vw;
+            height:100vh;
+
+        }
+        .container{
+            width:100%;
+            height:100%;
+            background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+        }
+        .card{
+            min-width:20%;
+            height:90%;
+           background-color: white;
+           border-radius: 1em;
+           display: flex;
+           flex-direction: column;
+          align-items: center;
+          justify-items: center;
+         
+           gap:1em;
+           flex-wrap: wrap;
+           box-shadow: 12px 17px 20px 20px black;
+           padding:0px 20px 0px 20px;
+       
+        }
+        .card img{
+            height:75%;
+            width:65%;
+            object-fit:fill;
+            object-position: center;
+            filter:brightness(120%);
+           
+          
+          
+        }
+        .card h2{
+            color:rgb(0, 94, 255);
+            
+
+        }
+        .card  p{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            font-weight: bold;
+            color: rgb(255, 38, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+         <img src="http://127.0.0.1:3000/HTML-CSS/CSS-project-20/scannercard.jpg" alt="">
+         <h2>Web devlopment Club</h2>
+         <p> Learn about web-devlopment and create Big project and solve real world problems or gain real time experience</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using Flexbox </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            background-color: rgb(241, 228, 228);
+            background-image: url('https://www.ultraedit.com/wp-content/uploads/2023/01/UE-codegear-event-banner.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+        
+        }
+        nav{
+            
+             background-color: white;
+             height: 90px;
+            
+        }
+       ul{
+           display:flex;
+           text-decoration: none;
+           list-style-type: none;
+           flex-direction: row;
+           /* justify-content: center; */
+           align-items: center;
+       }
+       #logo{
+        margin-right:450px;
+        margin-left:100px;
+            
+       }
+       li{
+        margin-right: 40px;
+       }
+       main{
+        text-align: center;
+        margin-top:200px;
+    
+    }
+       main p{
+          color:white;
+          font-size: 2em;
+          text-transform: capitalize;
+          font-weight: bold;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+       }
+       main p:first-line{
+        word-spacing: 5px;
+        font-size: 3 em;
+       }
+  
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="logo"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt=""></li>
+            <li>product⌄</li>
+            <li>pricing⌄</li>
+            <li>Resources⌄</li>
+            <li>About as⌄</li>
+            <li>security and compliance⌄</li>
+         
+        </ul>
+
+    </nav>
+    <main>
+           <p>Join us for <Dev Days of Summer> 2024! <br>
+            August 12-16 | 19-23, 2024 <br>
+            Two full weeks of live and on-demand developer content, all for free!SaveYourSeat! </p>
+    </main>
+</body>
+</html>

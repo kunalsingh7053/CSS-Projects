@@ -1,0 +1,206 @@
+* {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+body {
+    background-color: #d2d6de;
+    display: flex;
+    
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+}
+.login{
+     
+     margin-top: 80px;
+    width:400px;
+    height:500px;
+    background-color: white;
+    border-radius: 5px;
+}
+@media (max-width:500px)
+{
+    .login{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.logo{
+    width:100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-img{
+    width:50%;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.login-field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.login-field-text{
+    width:85% ;
+    height: 35px;
+   
+    margin-top: 1rem;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+}
+/* From Uiverse.io by namecho */ 
+
+.switch {
+    --button-width: 3em;
+    --button-height: 1.5em;
+    --toggle-diameter: 1.1em;
+    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset: 10px;
+    --toggle-wider: 3em;
+    --color-grey: #cccccc;
+    --color-green: #4296f4;
+
+   }
+   
+   .slider {
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-grey);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+   }
+   
+   .slider::after {
+    content: "";
+    display: inline-block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #fff;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider {
+    background-color: var(--color-green);
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+   }
+   
+   .switch input[type="checkbox"] {
+    display: none;
+   }
+   
+   .switch input[type="checkbox"]:active + .slider::after {
+    width: var(--toggle-wider);
+   }
+   
+   .switch input[type="checkbox"]:checked:active + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+   }
+   .toggle{
+    width:85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+ 
+   }
+   .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+   }
+   .link{
+    padding: 20px 20px;
+    width:50%;
+    
+   }
+   .flink{
+    text-decoration: none;
+    color: #337ab7;
+    font-size: 0.9rem;
+   }
+   .flink:hover{
+    text-decoration:underline;
+    color:rgb(126, 6, 238);
+   }
+   .button{
+    padding: 35px 15px;
+    width:50%;
+    
+    
+   }
+   .fbutton{
+   width:170px;
+   height: 35px;
+   border-radius: 5px;
+   background-color: rgb(72, 51, 72) !important;
+   color:white;
+   border: none;
+   }
+   .mainfooter{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(47, 45, 45);
+    width: 100vw;
+    height: 50px;
+    color: white;
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    overflow-x: hidden;
+   }
+   .right-anchor{
+    color:white;
+   }
+   .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   @media(max-width:500px)
+   {
+     .left{
+        flex-direction: column;
+     }
+     .right{
+        flex-direction: column;
+     }
+   }
+   .colorline{
+    width:100%;
+    height:0.5%;
+    background-color: #6278a4;
+   }

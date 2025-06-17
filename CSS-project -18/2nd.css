@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(232, 232, 232);
+}
+
+#side {
+    height: 2100px;
+    width: 5vw;
+    background-color: #132f57;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0px 15px 0px 15px;
+    color: white;
+}
+
+.adjust {
+    margin: 25px 0px 25px 0px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.line {
+    height: 0.5px;
+    background-color: #4d617d;
+}
+#side div:nth-child(2) {
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#side div:nth-child(4) {
+    color: #bbc1c9;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+#side div:nth-child(4):hover{
+    color: white;
+}
+
+#side div:nth-child(6) {
+    font-size: 20px;
+    margin-bottom: 0px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+#side div:nth-child(6):hover{
+        background-color: #4d617d;
+}
+
+#side :nth-child(7) {
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    align-self: center;
+    background-color: #4d617d;
+    color: #d9dbdf;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#side :nth-child(7):hover{
+    background-color: #bac3cf;
+
+}
+
+@media (max-width:800px) {
+    #side {
+        visibility: hidden;
+    }
+}
+
+#navbar {
+    position: absolute;
+    top: 0px;
+    left: 7.2vw;
+    height: 70px;
+    width: 91.7vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width:800px) {
+    #navbar {
+        left: 2%;
+        width: 100vw;
+    }
+}
+
+#nav1 {
+    display: flex;
+    align-items: center;
+}
+
+#nav2 {
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav2 div:nth-child(1):hover{
+    color: #adaeb0;
+    cursor: pointer;
+}
+#nav2 div:nth-child(2):hover{
+    color: #adaeb0;
+    cursor: pointer;
+}
+#nav2 div:nth-child(3){
+    cursor: pointer;
+}
+#nav2 div:nth-child(4){
+    cursor: pointer;
+}
+#inone {
+    display: flex;
+    align-items: center;
+}
+
+#notice {
+    height: 50px;
+    width: 330px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 9vw;
+    border-radius: 5px;
+    border-left: 4px solid #132f57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:800px) {
+    #notice {
+        left: 5vw;
+    }
+}
+
+#notice div {
+    height: 80%;
+    width: 95%;
+    background-color: #132f57;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#notice a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    animation: animate1 0.7s linear 0s infinite alternate;
+}
+
+@keyframes animate1 {
+    from {}
+
+    to {
+        color: #132f57;
+    }
+}
+
+#notice a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    position: absolute;
+    left: 7.2vw;
+    top: 200px;
+    height: 1850px;
+    width: 88vw;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 0.5fr 0.7fr;
+    justify-content: stretch;
+    gap: 25px;
+}
+
+@media (max-width : 800px) {
+    #main {
+        left: 1vw;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11,1fr);
+    }
+}
+
+#main .box {
+    background-color: white;
+    border-radius: 5px;
+    border-left: 4px solid #132f57;
+    padding: 20px;
+
+}
+
+.box div:first-child {
+    font-size: 20px;
+    color: #5a5c69;
+    font-weight: 500;
+}
+
+.box div:nth-child(2) {
+    height: 0.5px;
+    width: 100%;
+    background-color: #5a5c69;
+}
+
+.circle {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #132f57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    height: 20px;
+}
+
+.flexinbox {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.flexinbox a {
+    text-decoration: none;
+    color: #4e73df;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.box div:nth-child(2){
+    margin: 2px 0px 10px 0px;
+}
+.box a:hover{
+    text-decoration: underline;
+    text-decoration-color: #4e73df;
+}
+.blink{
+    animation: animate2 0.5s linear 0s infinite alternate;
+}
+@keyframes animate2 {
+    from {}
+    to {
+        color: #ffffff;
+    }
+}

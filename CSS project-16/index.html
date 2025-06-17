@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESIGN ULTRAEDIT WEBSITE DOWNLOAD MENU USING GRID</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            background: 0 0;
+        }
+        nav{
+            display:grid;
+            grid-template-rows: repeat(2,1fr);
+            background:white;
+            justify-items: center;
+            align-items: center;
+        }
+        ul {
+             display:flex;
+             justify-content:space-between;
+             align-items: center;
+             gap:10px;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(10,200px);
+            justify-content: center;
+            justify-items:center;
+            align-items: center;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        .items{
+             width:80%;
+             height:100%;
+             border:2px solid black;
+             background:#f9f9f9;
+             border-radius: 10px;
+             text-align: center;
+             
+             
+
+        }
+        .items button{
+             background-color: #5cb85c;
+             color:#fff;
+             padding: 8px 16px;
+             font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    
+ 
+        }
+        .items button a{
+            text-decoration: none;
+            color:white;
+        }
+        .items p{
+           font-size: 12px;
+         
+
+        }
+        .items:hover{
+            transform: perspective(200px) translateZ(30px);
+
+        }
+        nav ul li:hover{
+            transform: perspective(200px) translateZ(30px);
+
+
+        }
+        .text-heading{
+            text-align:center;
+        }
+       .text-heading h1{
+        text-align: center;
+       }
+       .text-heading h3{
+        text-align: center;
+        line-height: 1.3em;
+        color: #222;
+       }
+       .text-heading button{
+        text-align: center;
+        padding: 12px 20px !important;
+        font-size: 14px;
+    background-color: #00b6d1;
+    border-width: 0 !important;
+    border-radius: 5px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+  
+       }
+       .text-heading a{
+        text-decoration: none;
+        color: #fff;
+       }
+       .text-heading button:hover{
+        transform: perspective(200px) translateZ(30px);
+         
+       }
+       .items p{
+           font-size: 8px;
+         
+
+        }
+      
+        @media (min-width:961px)
+        {
+            nav{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            background:rgba(255, 255, 255, 0.826);
+            width:100%;
+            height:20%;
+          
+            justify-items: center;
+            align-items: center;
+        }
+        ul{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr 1fr 2fr 1fr;
+         
+            justify-items: center;
+            align-items: center;
+            
+         
+        }
+      
+        ul li{
+            list-style-type: none;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            display:grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 200px 200px 200px 200px;
+            justify-content: center;
+            justify-items:center;
+            align-items: center;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        .items{
+             width:100%;
+             height:100%;
+             border:1px solid white;
+             text-align: center;
+             flex-direction: row;
+            
+        }
+        .items p{
+           font-size: 8px;
+         
+
+        }
+      
+
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+            alt="logo"
+          />
+        </div>
+        <div class="right">
+            <ul>
+                <li>Product<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></li>
+                <li>Pricing<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></li>
+                <li>Resources<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></li>
+                <li>About Us<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></li>
+                <li id="security">Security and compliance<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></li>
+                <li><img
+                    src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                    alt="log"
+                  /></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="text-heading">
+    <h1 >Download
+        <strong>UltraEdit</strong>
+        for window&nbsp; 
+        <a href="https://www.g2.com/products/ultraedit/reviews"target="_blank"> <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" width="112" height="32" alt=""></a>
+        <br><br>
+       
+    </h1>
+    <h3 >
+        Download and try UltraEdit before you buy it! This download 
+         includes the full Windows <br> version of the text editor.
+    </h3>
+    <br>
+    <button><a href="https://www.ultraedit.com/downloads/uex-thank-you/"target="_blank">Download Mac or Linux version</a></button>
+
+</div>
+
+     <div class="container">
+        <div class="items item-1"><h3> English</h3><br>
+            <h4>English</h4>
+            <br>
+         <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+          <p>SHA256 <br>
+ AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+ C08EB2
+          </p>
+        </div>
+        <div class="items item-2"> <h3> Deutsch</h3><br>
+            <h4>German</h4>
+            <br>
+            <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+         <br>
+         <p>SHA256 <br>
+            AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+            C08EB2
+                     </p>
+        </div>
+        <div class="items item-3"><h3> Italiano</h3><br>
+            <h4>Italian</h4>
+            <br>
+            <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+            <br>
+            <p>SHA256 <br>
+                AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+                C08EB2
+                         </p>
+        </div>
+        <div class="items item-4"><h3> Español</h3><br>
+            <h4>Spanish</h4>
+            <br>
+            <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+         <br>
+         <p>SHA256 <br>
+            AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+            C08EB2
+                     </p>
+        </div>
+        <div class="items item-5"><h3> français</h3><br>
+            <h4>French</h4>
+            <br>
+            <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+         <br>
+         <p>SHA256 <br>
+            AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+            C08EB2
+                     </p>
+        </div>
+        <div class="items item-6"><h3> Português brasileiro</h3><br>
+            <h4>Brazilian Portuguese</h4>
+            <br>
+            <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+         <br>
+         <p>SHA256 <br>
+            AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+            C08EB2
+                     </p>
+        </div>
+        <div class="items item-7"><h3> 日本</h3><br>
+            <h4>Japanese</h4>
+            <br>
+            <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+         <br>
+         <p>SHA256 <br>
+            AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+            C08EB2
+                     </p>
+        </div>
+        <div class="items item-8"><h3> 한국어</h3><br>
+            <h4>Korean</h4>
+            <br>
+            <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+         <br>
+         <p>SHA256 <br>
+            AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+            C08EB2
+                     </p>
+        </div>
+        <div class="items item-9"><h3> 中国</h3><br>
+            <h4>Chinese</h4>
+            <br>
+            <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+         <br>
+         <p>SHA256 <br>
+            AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+            C08EB2
+                     </p>
+        </div>
+        <div class="items item-10"<h3> >中國</h3><br>
+            <h4>Traditional Chinese</h4>
+            <br>
+            <button ><a href="ue_english_64.exe">Download 64-bit</a></button><br><br>
+         <br>
+         <p>SHA256 <br>
+            AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC <br>
+            C08EB2
+                     </p>
+        </div>
+     </div>
+   
+ 
+    
+</body>
+</html>
