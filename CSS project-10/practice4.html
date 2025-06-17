@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        body{
+            background-color: bisque;
+            border:5px solid black;
+            width:100vw;
+            height:100vh;
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+
+        }
+        #login-form{
+            border:2px solid black;
+            width:30vw;
+            height:90vh;
+           background-color: rgb(123, 255, 154);
+           box-shadow: 0px 2px 5px black;
+           border-radius:20px;
+           padding: 20px;
+    
+        }
+        label{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            text-transform: capitalize;
+            
+        }
+        input{
+            width:100%;
+            height:5%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        input::placeholder{
+            text-align:center;
+            text-transform: capitalize;
+        }
+        center{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-size: 30px;
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+        }
+        button{
+             width:80%;
+             height: 5vh;
+             border-radius: 20px;
+             background-color: rgb(255, 155, 118);
+
+        }
+        img{
+            width:10%;
+            border-radius: 20px;
+        }
+
+            @media  (min-width: 300px)
+            {
+              #login-form{
+                     width:50vw;
+                }
+              #login-with{
+                   font-size:20px;
+              }
+
+
+            }
+    
+            @media  (max-width: 1500px)
+            {
+              #login-form{
+                     width:50vw;
+                }
+
+
+            }
+    
+
+
+    </style>
+</head>
+<body>
+    <!-- login form --> 
+     <form action="" method="post" id="login-form" >
+        <center>login form</center><br><br>
+        <label for="username">access username</label>
+        <input type="text" placeholder="username"name="user"id="username"autofocus required>
+        <br><br>
+        <label for="email-address">access email address</label>
+        <input type="text" placeholder="email address"name="mail"id="email-address"required>
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" placeholder="password" name="pass"id="password"required>
+        <br><br>
+        <a href="">forget password???</a><br><br>
+      <center>  <button  type="submit" value="login now">Login now</button></center>
+      <p>NOT A MAMBER YET? <a href="">click here to register as a member.</a><br></p>
+      <br><br>
+      <center><p id="login-with">login with</p>
+      <img src="https://i.pinimg.com/736x/25/2f/00/252f00e2f76e932d63f0cdb5b904854e.jpg" alt="logo"></center>
+     </form>
+    
+</body>
+</html>
